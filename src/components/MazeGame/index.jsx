@@ -25,7 +25,7 @@ const MazeGame = (props) => {
 
         let needToShake = field.shake ? styles.Field__Shake : ''
 
-        let startPositionColor = field.startPosition ? styles.Field__BGColor : ''
+        let startPositionColor = field.startPosition ? styles.Field__BGStartColor : ''
 
         return (
             <div onClick={(event) => {

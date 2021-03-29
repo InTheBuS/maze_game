@@ -7,8 +7,6 @@
     flex-wrap: wrap;
 }
 .MazeArrows__Arrow {
-    width: 50px;
-    height: 50px;
     margin: 10px;
     border-radius: 12px;
     background-color: #deff00;
@@ -21,8 +19,8 @@
     opacity: 0;
     transition: opacity .2s, transform .2s;
     transform: translateY(50px);
-
 }
+
 .MazeArrows_Arrow__Show {
     opacity: 1;
     transform: translateY(0);
@@ -37,4 +35,16 @@
 .MazeArrows__Arrow__Right {
     transition: background-color .2s;
     background-color: green;
+}
+@media (max-width: 400px) {
+    .MazeArrows__Arrow {
+        width: 45px;
+        height: 45px;
+    }
+}
+@media (min-width: 401px) {
+    .MazeArrows__Arrow {
+        width: 55px;
+        height: 55px;
+    }
 }
