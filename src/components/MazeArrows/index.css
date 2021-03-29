@@ -1,0 +1,40 @@
+.MazeArrows {
+    width: 350px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.MazeArrows__Arrow {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 12px;
+    background-color: #deff00;
+    color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 46px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .2s, transform .2s;
+    transform: translateY(50px);
+
+}
+.MazeArrows_Arrow__Show {
+    opacity: 1;
+    transform: translateY(0);
+    color: #10013c;
+}
+
+.MazeArrows__Arrow__Wrong {
+    transition: background-color .2s;
+    background-color: red;
+}
+
+.MazeArrows__Arrow__Right {
+    transition: background-color .2s;
+    background-color: green;
+}

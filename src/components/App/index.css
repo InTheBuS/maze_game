@@ -1,0 +1,32 @@
+.App {
+    width: 100%;
+    height: 100vh;
+    background: #4d008a;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+}
+.startButton {
+    margin: 10px;
+    background: #1e0074;
+    outline: none;
+    cursor: pointer;
+    width: 150px;
+    border: none;
+    height: 35px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    border-radius: 4px;
+    transition: opacity, width .2s, .4s;
+
+    color: white;
+    font-size: 24px;
+}
+.startButton:hover {
+    opacity: .8;
+    width: 170px;
+}
+.startButton:active {
+    width: 130px;
+}
